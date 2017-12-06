@@ -274,9 +274,31 @@ header.container nav #mainMenu>li>a:hover{
 /*********Start Footer *********/
 #foot{
     background-color: #011727;
-    color: #fff
+    color: #fff;
+    overflow: auto;
 }
+#foot>li{
+    float:left;
+    /*width:250px;*/
+    border-right:1px solid #ccc;
+}
+#foot>li:after{
+    content: ""; display: block; clear: both;
+}
+#foot .terms{
+    width:500px;
+}
+#foot .terms ul li{
+    display: inline;
+    padding:0 10px;
+    
+}
+#foot .terms ul li:after{
+    content: ""; display: block; clear: both;
+}
+#foot .terms .pullDown .familySite{
 
+}
 
 .pullDown:hover .familySite{
     display: block;

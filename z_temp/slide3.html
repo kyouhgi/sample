@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        .mySlide{width:300px; height:200px;}
+        .button{border:0; background-color:#f9f9f9;}
+        .arrow:hover, .indi:hover{color:#fff; background-color:#ccc;}
+        .red{color:#fff; background-color:red;}
+    </style>
+
+</head>
+<body>
+<div>
+    <img src="../img/slide1.jpg" alt="img1" class="mySlide">
+    <img src="../img/slide2.jpg" alt="img2" class="mySlide">
+    <img src="../img/slide3.jpg" alt="img3" class="mySlide">
+    <img src="../img/slide4.jpg" alt="img4" class="mySlide">
+</div>
+<div>
+    <div class="section">
+        <button class="button arrow prev" onclick="plusDiv(-1)">< Prev</button>
+        <button class="button arrow next" onclick="plusDiv(1)">Next ></button>
+    </div>
+    <button class="button indi" onclick="currentDiv(1)">1</button>
+    <button class="button indi" onclick="currentDiv(2)">2</button>
+    <button class="button indi" onclick="currentDiv(3)">3</button>
+    <button class="button indi" onclick="currentDiv(4)">4</button>
+</div>
+
+<script>
+
+var index = 1;
+showDivs(index);
+
+function plusDiv(n){
+    showDivs(index+=n);
+}
+
+function currentDiv(n){
+    showDivs(index=n);
+}
+
+function showDivs(n){
+    var i;
+    var x = document.getElementsByClassName("mySlide");
+    var dots = document.getElementsByClassName("indi");
+    
+    if(n>x.length){index=1;}
+    if(n<1){index=x.length;}
+    
+    for(i=0; i<x.length; i++){
+        x[i].style.display = "none";
+    }
+    for(i=0; i<dots.length; i++){
+        dots[i].className = dots[i].className.replace(" red", "");
+    }
+    x[index-1].style.display = "block";
+    dots[index-1].className += " red";
+}
+</script>    
+    
+</body>
+</html>

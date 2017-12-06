@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        .mySlides{width:300px; height:200px;}
+    </style>
+
+</head>
+<body>
+
+    <img src="../img/slide1.jpg" alt="image1" class="mySlides">
+    <img src="../img/slide2.jpg" alt="image2" class="mySlides">
+    <img src="../img/slide3.jpg" alt="image3" class="mySlides">
+    <img src="../img/slide4.jpg" alt="image4" class="mySlides">
+    
+    
+<script>
+
+var index = 0;
+carousel();
+
+function carousel(){
+    var x = document.getElementsByClassName("mySlides");
+    for(var i=0; i<x.length; i++){
+        x[i].style.display = "none";
+    }
+    index++;
+    if(index>x.length){index=1;}
+    x[index-1].style.display = "block";
+    setTimeout(carousel, 2000);
+}
+
+</script>    
+    
+</body>
+</html>

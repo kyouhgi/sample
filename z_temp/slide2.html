@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        #wrap{width:300px; height:200px; }
+    </style>
+
+</head>
+<body>
+<div id="wrap">
+    <div class="mySlide">
+        <h1>너 알았냐?</h1>
+        <h1>우리는 2020년에 달가기 위해 표를 살 계획이 있다. </h1>
+    </div>
+    
+    <img src="../img/slide1.jpg" alt="" class="mySlide">
+    
+    <div class="mySlide">
+        <p><span>New!</span></p>
+        <p>6크리스탈 유리</p>
+        <p>99000원!!</p>
+    </div>
+    
+    <img src="../img/slide2.jpg" alt="" class="mySlide">
+</div>
+
+<script>
+
+var index=0;
+
+carousel();
+
+function carousel(){
+    var x = document.getElementsByClassName("mySlide");
+    for(var i=0; i<x.length; i++){
+        x[i].style.display = "none";
+    }
+    index++
+    if(index>x.length){index=1;}
+    x[index-1].style.display = "block";
+    setTimeout(carousel, 2000);
+    
+}
+
+</script>    
+
+</body>
+</html>

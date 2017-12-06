@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+
+</head>
+<body>
+
+    <img src="../img/slide1.jpg" alt="image1" class="mySlides">
+    <img src="../img/slide2.jpg" alt="image2" class="mySlides">
+    <img src="../img/slide3.jpg" alt="image3" class="mySlides">
+    <img src="../img/slide4.jpg" alt="image4" class="mySlides">
+    <button class="btn display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="btn display-right" onclick="plusDivs(+1)">&#10095;</button>
+    
+<script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+
+function plusDivs(n){
+    showDivs(slideIndex+=n);
+}
+
+function showDivs(n){
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if(n>x.length){slideIndex=1;}
+    if(n<1){slideIndex=x.length;}
+    for(i=0; i<x.length; i++){
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+    x[slideIndex-1].style.width = "300px";
+}
+
+/* 직접 코딩한 것 위 코딩과 비교(결과는 같음)
+var index = 0;
+showDivs(index);
+
+function plusDivs(n){
+    showDivs(index+=n);
+}
+
+function showDivs(n){
+    var x = document.getElementsByClassName("mySlides");
+    index = n;
+    if(n>x.length-1){index = 0;}
+    if(n<0){index = x.length-1;}
+    for(var i=0; i<x.length; i++){
+        x[i].style.display = "none";
+    }
+    x[index].style.display = "block";
+}
+*/
+
+</script>    
+    
+</body>
+</html>

@@ -1,0 +1,287 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, a,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	-webkit-text-size-adjust:none;
+	font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.bg-container{
+    border-bottom:1px solid #ccc;
+}
+body{
+    background-color: #fff;
+}
+
+/*********Start header*********/
+#top-hline-bg{
+    height:50px;
+    width:100%;
+    background:#b50f22;
+    position:absolute;
+    z-index: -1;
+}
+.container{
+    width:1000px;
+    margin:0 auto;
+    border-left:1px solid #ffa3a3;
+    border-right:1px solid #ffa3a3;
+}
+.container:after{
+    content: '';
+    display:block;
+    clear:both;
+}
+header.container #logo{
+    font-size:0;
+    float:left;
+    width:290px;
+    height:120px;
+    background : #fff url("logo_concordia2.png") no-repeat center center;
+}
+header.container nav{
+    text-align: right;
+}
+header.container nav #quickManu{
+    height: 50px;
+}
+header.container nav #quickManu li{
+    display: inline;
+    border-right:1px solid #cc3333;
+}
+header.container nav #quickManu li:last-child{
+    border-right:none;
+}
+header.container nav #quickManu li a{
+    padding:0 10px;
+    color:#ffa3a3;
+    font-size:0.7em;
+}
+header.container nav #mainMenu>li{
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    margin-left:-7px;
+}
+header.container nav #mainMenu>li:last-child,
+header.container nav #mainMenu>li:nth-last-child(2){
+    border-right:none;
+}
+header.container nav #mainMenu>li>a{
+    display: block;
+    padding:20px 20px;
+    font-size:1.7em;
+    font-weight: 900;
+    color:#999;
+}
+header.container nav #mainMenu>li>a:hover{
+    background:#011727;
+}
+
+/*Stert allViewBox*/
+#allViewBtn{
+    position: relative;
+}
+#allViewBtn>a{
+    background-color: #eaeaea;
+}
+#allViewBtn:hover #allViewBox{       /*Mega-Menu Main Code1*/
+    display: block;
+}
+#allViewBtn #allViewBox{             /*Mega-Menu Main Code2*/
+    display: none;
+    position:absolute;
+    width:1000px;
+    left:-929px;
+    background-color: #011727;
+    color:#046ab5;
+    z-index: 1;
+}
+#allViewBtn #allViewBox h2{
+    text-align:left;
+    border-bottom: 2px solid #0a2b42;
+    font-size:1.3em;
+    padding:20px;
+}
+#allViewBtn #allViewBox .rowBox{
+    overflow: auto;
+    padding-bottom: 20px;
+}
+#allViewBtn #allViewBox .rowBox> li {
+    float: left;
+    border-right: 1px solid #0a2b42;
+    width: 22.9%;
+    padding:0 10px;
+}
+#allViewBtn #allViewBox .rowBox> li:last-child{
+    border-right:none;
+}
+#allViewBtn #allViewBox .rowBox .cloumnBox h3{
+    padding:5px;
+    border-bottom: 1px solid #0a2b42;
+}
+#allViewBtn #allViewBox .rowBox .cloumnBox li{
+    text-align:center;
+    border-bottom: 1px dotted #0a2b42;
+}
+/*End allViewBox*/
+/*********End header*********/
+
+
+/*********Start rollingBanner*********/
+#rollingBanner{
+}
+#rollingBanner #bannerMask{
+    height:400px;
+    width:1000px;
+    position: relative; /**This property is for SlideBanner3-1 **/
+    overflow:hidden;
+}
+#rollingBanner #bannerMask li{
+    position: absolute;
+    width: 1000px;
+    left: 1000px;
+}
+#rollingBanner ul li img{
+    height: 400px;
+}
+#rollingBanner ul li .bannerText{
+    float:right;
+    padding:80px 50px 0 0;
+}
+#rollingBanner ul li .bannerText h2{
+    font-size: 28px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+#rollingBanner ul li .bannerText p{
+    font-size: 12px;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+#rollingBanner ul li .bannerText a{
+    background-color: #00ffff;
+    padding:5px 10px;
+    border:0;
+}
+#rollingBanner #buttons{
+    position: absolute;
+}
+#rollingBanner #buttons ul{
+    position: relative;
+    width:210px;
+    left:400px;
+    top:-30px;
+}
+#rollingBanner #buttons ul li{
+    display:inline-block; /**This property is for SlideBanner3-2 **/
+    position:relative;    /**This property is for SlideBanner3-3 **/
+    width:15px;
+    height:15px;
+    line-height: 15px;
+    text-align:center;
+    background-color:#fff;
+    border:3px solid #b50f22;
+    border-radius: 10px;
+    cursor:pointer;
+}
+#rollingBanner #buttons li.checked{
+    background-color: #b50f22;
+}
+/*********End rollingBanner*********/
+
+
+/*********Start rowContents *********/
+.rowContents{
+    position: relative;
+}
+.rowContents li{
+    float:left;
+    width:250px;
+    border-bottom:1px solid #ccc;
+}
+.rowContents li h3 span{
+    display: block;
+    font-size: 0.6em;
+    font-weight:lighter;
+}    
+.rowContents li h3,
+.rowContents li div,
+.rowContents li p{
+    max-height: 150px;
+    height:150px;
+    padding:0 10px;
+    border-right:1px dashed #ccc;
+    line-height: 20px;
+}
+.rowContents li h3{
+    width:250px;
+    display: table-cell;
+    vertical-align: bottom;
+    font-size: 1.2em
+}
+.rowContents li p{
+    font-size: 0.8em;
+}
+.rowContents li:last-child h3,
+.rowContents li:last-child div,
+.rowContents li:last-child p{
+    border-right:none;
+}
+.content1 li .colorRect1, .content2 li .colorRect4{
+    background-color: #011727;
+}
+.content1 li .colorRect2, .content2 li .colorRect3{
+    background-color: #efffe9;
+}
+.content1 li .colorRect3, .content2 li .colorRect2{
+    background-color: #2ec4b6;
+}
+.content1 li .colorRect4, .content2 li .colorRect1{
+    background-color: #b50f22;
+}
+/*Start Right Column*/
+#rightColumn{
+    position: absolute;
+    top:-150px;
+    left:750px;
+    background-color: #b50f22;
+    height:600px;
+    width:250px;
+}
+/*End Right Column*/
+/*********End rowContents*********/
+
+
+/*********Start Footer *********/
+#foot{
+    background-color: #011727;
+    color: #fff
+}
+
+
+.pullDown:hover .familySite{
+    display: block;
+}
+.pullDown .familySite{
+    display: none;
+}
+/*********End Footer*********/

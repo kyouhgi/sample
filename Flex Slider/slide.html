@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="slider.css" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $('.flexslider').flexslider({
+              animation: 'fade',
+              controlsContainer: '.flexslider'
+           });
+        });
+    </script>
+</head>
+<body>
+<div class="flex-container">
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <a href="#"><img src="../img/slide1.png" /></a>
+            </li>
+             
+            <li>
+                <img src="../img/slide2.png" />
+            </li>
+             
+            <li>
+                <img src="../img/slide3.png" />
+                <p>Designing The Well-Tempered Web</p>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

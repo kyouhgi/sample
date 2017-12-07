@@ -19,8 +19,8 @@
     <script type="text/javascript" src="layout.js"></script>
 </head>
 <body>
-    <div class="bg-container">
-        <div id="top-hline-bg"></div>
+    <div class="bgContainer">
+        <div id="bgTopHLine"></div>
         <header class="container">
             <div id="logo">logo</div>
             <nav>
@@ -35,7 +35,7 @@
                     <li><a href="#">Level 3 Foundation</a></li>
                     <li><a href="#">Sixth Form</a></li>
                     <li id="allViewBtn">
-                        <a href="#"><img src="all_view_icon.png"></img></a>
+                        <a href="#"><img src="images/all_view_icon.png"></img></a>
                         <div id="allViewBox">
                             <h2>Concordia</h2>
                             <ul class="rowBox">
@@ -84,18 +84,19 @@
                                     </ul>
                                 </li>
                             </ul>
+                            <div>Fun Learning</div>
                         </div>
                     </li>
                 </ul>
             </nav>
         </header>
     </div><!--/////////////// End className bg-container(header)-->
-    <div class="bg-container">
+    <div class="bgContainer">
         <section class="container">
             <div id="rollingBanner">
                 <ul id="bannerMask">
                     <li>
-                        <img src="../img/slide1.jpg" alt="">
+                        <img src="../images/slide1.png" alt="">
                         <div class="bannerText">
                             <h2>Learning Consulting</h2>
                             <p>Little drops of water make the mighty ocean.<br>작은 물방울이 힘 센 대양이 된다. (낙수 물이 바위를 뚫는다.)</p>
@@ -103,7 +104,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../img/slide2.jpg" alt="">
+                        <img src="../images/slide2.png" alt="">
                         <div class="bannerText">
                             <h2>Learning Communication</h2>
                             <p>The road is always shorter when two people walk it.<br>길동무와 함께 하면 여정은 짧다.</p>
@@ -111,7 +112,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../img/slide3.jpg" alt="">
+                        <img src="../images/slide3.png" alt="">
                         <div class="bannerText">
                             <h2>Learning Analysis</h2>
                             <p>The World that we live in is full of chance.<br>지금 살고 있는 세계는 기회로 가득 차 있다.</p>
@@ -119,7 +120,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../img/slide4.jpg" alt="">
+                        <img src="../images/slide4.png" alt="">
                         <div class="bannerText">
                             <h2>Learning Life Style</h2>
                             <p>The hardest work is to go idle.<br>가장 하기 힘든 일은 아무 일도 안하는 것이다. </p>
@@ -138,7 +139,7 @@
             </div>
         </section>
     </div><!--/////////////// End className bg-container(banner)-->
-    <div class="bg_container">
+    <div class="bgContainer">
         <section class="container">
             <ul class="rowContents content1">
                 <div id="rightColumn">
@@ -190,49 +191,46 @@
             </ul>
         </section>
     </div><!--/////////////// End className bg-container(section)-->
-    <div class="bg_container">
-        <footer class="container">
+    <div class="bgContainer bgContainer4">
+        <footer class="container container4">
             <ul id="foot">
-                <li><img src="logo_concordia2.png" alt="Concordia Logo"></li>
+                <li class="footLogo"></li>
                 <li class="terms">
                     <ul>
-                        <li><a href="http://www.concordia.kr">Home</a></li>
+                        <li><a href="http://www.concordia.kr">HOME</a></li>
                         <li><a href="#">이용약관</a></li>
                         <li><a href="#">개인정보취급방침</a></li>
                         <li><a href="#">제휴문의</a></li>
                         <li class="pullDown">
-                            <h4>관련사이트</h4>
+                            <h4>관련사이트&#9650;&#9660;</h4>
                             <ul class="familySite">
                                 <li><a href="http://www.semtlenuri.com" target="_blank">셈틀누리</a></li>
-                                <li><a href="http://www.stlibrary.co.kr">셈틀라이브러리</a></li>
+                                <li><a href="http://www.stlibrary.co.kr" target="_blank">셈틀라이브러리</a></li>
                                 <li><a href="http://www.semtlelibrary.co.kr" target="_blank">셈틀영어도서관</a></li>
                                 <li><a href="http://www.jbmath.co.kr" target="_blank">배종수 수학</a></li>
                             </ul>
                         </li>
                     </ul>
                     <p class="address">
-                        회사명 :셈틀누리	대표 : 홍영희<br>
-                        주소 : 경기도 성남시 분당구 정자동 24번지<br>
-                        사업자등록번호 : 120-11-60991<br>
-                        통신판매신고 : 제2010-경기성남-0539호<br>
-                        TEL : 031-608-5656<br>
-                        HP : 010-9582-2003<br>
-                        E-mail : smsemtle@naver.com<br>
-                        ⓒCopyright by semtlenuri
+                        <spon>회사명 : 셈틀누리 대표 : 홍영희</spon>
+                        <spon>주소 : 경기도 성남시 분당구 정자동 24번지</spon>
+                        <spon>사업자등록번호 : 120-11-60991</spon>
+                        <spon>통신판매신고 : 제2010-경기성남-0539호</spon>
+                        <spon>E-mail : smsemtle@naver.com</spon>
+                        <spon>ⓒCopyright by semtlenuri</spon>
                     </p>
                 </li>
                 <li class="callCenter">
-                    <img src="logo_concordia2.png" alt="콜센터 TEL:010-9582-2003">
-                    <p></p>
+                    <h3>고객센터</h3>
+                    <p>
+                        TEL : 031-608-5656<br>
+                        H P : 010-9582-2003<br>
+                        평 일 : AM9 ~ PM6<br>
+                        주 말 : AM9 ~ PM5
+                    </p>
                 </li>
             </ul>
         </footer>
-    </div><!--/////////////// End className bg-container-->
-    <div class="bg_container">
-        
-    </div><!--/////////////// End className bg-container-->
-    <div class="bg_container">
-        
-    </div><!--/////////////// End className bg-container-->
+    </div><!--/////////////// End className bg-container(footer-->
 </body>
 </html>

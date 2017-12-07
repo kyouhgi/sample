@@ -14,7 +14,7 @@ function nextImage(){
     }else{
         i = 1;
     }
-    document.getElementById('box').innerHTML = "<img src='../img/"+image[i-1]+".jpg'>";
+    document.getElementById('box').innerHTML = "<img src='../images/"+image[i-1]+".png'>";
 }
 
 function prevImage(){
@@ -23,5 +23,5 @@ function prevImage(){
     }else{
         i = image.length;
     }
-    document.getElementById('box').innerHTML = "<img src='../img/"+image[i-1]+".jpg'>";
+    document.getElementById('box').innerHTML = "<img src='../images/"+image[i-1]+".png'>";
 }

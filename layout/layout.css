@@ -25,17 +25,19 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.bg-container{
-    border-bottom:1px solid #ccc;
-}
+
 body{
     background-color: #fff;
 }
+.bgContainer{
+    border-bottom:1px solid #ffa3a3;
+    min-width: 1000px;
+}
 
-/*********Start header*********/
-#top-hline-bg{
+#bgTopHLine{
     height:50px;
-    width:100%;
+    width: 100%;
+    min-width: 1000px;
     background:#b50f22;
     position:absolute;
     z-index: -1;
@@ -51,12 +53,14 @@ body{
     display:block;
     clear:both;
 }
+
+/*********Start header*********/
 header.container #logo{
     font-size:0;
     float:left;
     width:290px;
     height:120px;
-    background : #fff url("logo_concordia2.png") no-repeat center center;
+    background : #fff url("images/logo_concordia2.png") no-repeat center center;
 }
 header.container nav{
     text-align: right;
@@ -96,6 +100,7 @@ header.container nav #mainMenu>li>a:hover{
     background:#011727;
 }
 
+
 /*Stert allViewBox*/
 #allViewBtn{
     position: relative;
@@ -103,44 +108,65 @@ header.container nav #mainMenu>li>a:hover{
 #allViewBtn>a{
     background-color: #eaeaea;
 }
-#allViewBtn:hover #allViewBox{       /*Mega-Menu Main Code1*/
-    display: block;
+#allViewBtn:hover #allViewBox{
+    display: block;                   /*Mega-Menu Main Code1*/
 }
-#allViewBtn #allViewBox{             /*Mega-Menu Main Code2*/
-    display: none;
+#allViewBtn #allViewBox{
+    display: none;                   /*Mega-Menu Main Code2*/
     position:absolute;
     width:1000px;
     left:-929px;
     background-color: #011727;
     color:#046ab5;
     z-index: 1;
+    /*border:10px solid #0a2b42;*/
 }
 #allViewBtn #allViewBox h2{
+    position: relative;
     text-align:left;
     border-bottom: 2px solid #0a2b42;
     font-size:1.3em;
     padding:20px;
 }
 #allViewBtn #allViewBox .rowBox{
+    position: relative;
     overflow: auto;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 #allViewBtn #allViewBox .rowBox> li {
     float: left;
     border-right: 1px solid #0a2b42;
-    width: 22.9%;
+    width: 25%;
     padding:0 10px;
 }
 #allViewBtn #allViewBox .rowBox> li:last-child{
     border-right:none;
 }
 #allViewBtn #allViewBox .rowBox .cloumnBox h3{
-    padding:5px;
-    border-bottom: 1px solid #0a2b42;
+    padding:7px;
+    border-bottom: 3px solid #0a2b42;
 }
 #allViewBtn #allViewBox .rowBox .cloumnBox li{
-    text-align:center;
-    border-bottom: 1px dotted #0a2b42;
+    border-bottom: 1px dashed #0a2b42;
+    padding:2px;
+}
+#allViewBtn #allViewBox .rowBox .cloumnBox li a{
+    text-align: left;
+    display: inline-block;
+    width:100%;
+    padding:5px;
+    color: #035d9f;
+}
+#allViewBtn #allViewBox .rowBox .cloumnBox li a:hover{
+    background-color: #0d304a;
+    color:#0395ff;
+    font-weight: 900;
+}
+#allViewBox div{
+    font-size: 0.7em;
+    font-weight: 900;
+    border-top:5px solid #0a2b42;
+    padding:2px;
 }
 /*End allViewBox*/
 /*********End header*********/
@@ -161,7 +187,10 @@ header.container nav #mainMenu>li>a:hover{
     left: 1000px;
 }
 #rollingBanner ul li img{
+    width: 600px;
     height: 400px;
+    /*padding:50px 0;*/
+    
 }
 #rollingBanner ul li .bannerText{
     float:right;
@@ -272,38 +301,100 @@ header.container nav #mainMenu>li>a:hover{
 
 
 /*********Start Footer *********/
-#foot{
+.bgContainer4{
     background-color: #011727;
-    color: #fff;
+}
+.container4{
+    border:none;
+}
+#foot{
     overflow: auto;
 }
 #foot>li{
     float:left;
-    /*width:250px;*/
-    border-right:1px solid #ccc;
+    width:250px;
+    height:190px;
+    border-left:1px solid #003366;
 }
-#foot>li:after{
-    content: ""; display: block; clear: both;
+#foot>li:first-child{
+    border-left: none;
+}
+#foot .footLogo{
+   background: url(images/logo_concordia2.png) no-repeat 10px center;
+   background-size: 80%
 }
 #foot .terms{
     width:500px;
 }
-#foot .terms ul li{
-    display: inline;
-    padding:0 10px;
-    
+#foot .terms ul li a{
+    color:#0066cc;
+    font-size: 0.7em
 }
-#foot .terms ul li:after{
+#foot .terms>ul>li{
+    float: left;
+    margin:10px 0;
+    padding:0 15px;
+    border-right:1px solid #003366;
+}
+#foot .terms>ul>li:last-child{
+    border-right:none;
+}
+#foot .terms :after{
     content: ""; display: block; clear: both;
 }
-#foot .terms .pullDown .familySite{
-
+#foot .terms .pullDown{
+    position: relative;
 }
-
-.pullDown:hover .familySite{
+#foot .terms .pullDown h4{
+    width: 130px;
+    padding:5px;
+    text-align: center;
+    background-color: #b50f22;
+    font-size:0.8em;
+    cursor: pointer;
+}
+#foot .terms .pullDown .familySite li a{
     display: block;
+    padding:10px 28px;
+    background-color: #ededed;
+    border-bottom: 1px solid #cccccc;
+    font-weight: 800;
+    color: #011727;
 }
-.pullDown .familySite{
+#foot .terms .pullDown .familySite li a:hover{
+    background-color: #ff6666;
+    color:#ffffff;
+}
+#foot .terms .pullDown .familySite{
+    position: absolute;
     display: none;
+}
+#foot .terms .pullDown:hover .familySite{
+    display: inline;
+}
+
+#foot .terms .address{
+    padding:20px 0 0 10px;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    color:#0066cc;
+}
+
+
+#foot .callCenter{
+    background: url(images/phone.png) no-repeat 20px center;
+    background-size: 30px;
+}
+#foot .callCenter h3{
+    margin:50px 0 0 80px;
+    border-bottom: 1px dashed #0066cc;
+    color:#0066cc;
+}
+#foot .callCenter p{
+    padding:10px 0 0 80px;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    color: #0066cc;
+    
 }
 /*********End Footer*********/

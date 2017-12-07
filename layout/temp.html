@@ -17,14 +17,30 @@
 
         
         *{margin:0; padding:0;}
-        div{ width:1000px; margin:0 auto; border:1px solid red;
+        #abc{ width:1000px; margin:0 auto; border:1px solid red;
+            border:1px solid #ccc;
+        }
+        #line{
+            position:relative;
+            width:100%;
+            height:100px;
+            background:red;
+            /*position:fixed;*/
+            z-index:-1;
+        }
+        #mline{
+            height:200px;
+            width:100%;
+            border:1px solid #ccc;
+            /*position:fixed;*/
         }
         ul{
             margin-right:6px;
-            text-align:right;
+            text-align:center;
             /*font-size:0;*/
         }
-        li{display:inline-block; 
+        li{
+            display:inline-block; 
             margin-right:-6px;
             border-left:1px solid #ccc; 
             background:#fcfcfc;
@@ -37,10 +53,18 @@
         ul li:first-child{border-left:0;}
         ul li:last-child{border-left:0;}
         ul li:hover{background:red;}
+        #aaa{
+            position:absolute;
+            background-color:pink;
+            width:400px;
+            /*height:100%;*/
+        }
+        body{height:100%;}
     </style>
 </head>
 <body>
-    <div>
+    <div id="line"></div>
+    <div id="abc">
         <ul>
             <li>clc</li>
             <li>sis</li>
@@ -49,5 +73,7 @@
             <li>m</li>
         </ul>
     </div>
+    <div id="mline"></div>
+    <div id="aaa"></div>
 </body>
 </html>

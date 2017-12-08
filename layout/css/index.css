@@ -1,0 +1,126 @@
+/*********Start rollingBanner*********/
+#rollingBanner{
+}
+#rollingBanner #bannerMask{
+    height:400px;
+    width:1000px;
+    position: relative; /**This property is for SlideBanner3-1 **/
+    overflow:hidden;
+}
+#rollingBanner #bannerMask li{
+    position: absolute;
+    width: 1000px;
+    left: 1000px;
+}
+#rollingBanner ul li img{
+    width: 600px;
+    height: 400px;
+    /*padding:50px 0;*/
+    
+}
+#rollingBanner ul li .bannerText{
+    float:right;
+    padding:80px 50px 0 0;
+}
+#rollingBanner ul li .bannerText h2{
+    font-size: 28px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+#rollingBanner ul li .bannerText p{
+    font-size: 12px;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+#rollingBanner ul li .bannerText a{
+    background-color: #00ffff;
+    padding:5px 10px;
+    border:0;
+}
+#rollingBanner #buttons{
+    position: absolute;
+}
+#rollingBanner #buttons ul{
+    position: relative;
+    width:210px;
+    left:400px;
+    top:-30px;
+}
+#rollingBanner #buttons ul li{
+    display:inline-block; /**This property is for SlideBanner3-2 **/
+    position:relative;    /**This property is for SlideBanner3-3 **/
+    width:15px;
+    height:15px;
+    line-height: 15px;
+    text-align:center;
+    background-color:#fff;
+    border:3px solid #b50f22;
+    border-radius: 10px;
+    cursor:pointer;
+}
+#rollingBanner #buttons li.checked{
+    background-color: #b50f22;
+}
+/*********End rollingBanner*********/
+
+
+/*********Start rowContents *********/
+.rowContents{
+    position: relative;
+}
+.rowContents li{
+    float:left;
+    width:250px;
+    border-bottom:1px solid #ccc;
+}
+.rowContents li h3 span{
+    display: block;
+    font-size: 0.6em;
+    font-weight:lighter;
+}    
+.rowContents li h3,
+.rowContents li div,
+.rowContents li p{
+    max-height: 150px;
+    height:150px;
+    padding:0 10px;
+    border-right:1px dashed #ccc;
+    line-height: 20px;
+}
+.rowContents li h3{
+    width:250px;
+    display: table-cell;
+    vertical-align: bottom;
+    font-size: 1.2em
+}
+.rowContents li p{
+    font-size: 0.8em;
+}
+.rowContents li:last-child h3,
+.rowContents li:last-child div,
+.rowContents li:last-child p{
+    border-right:none;
+}
+.content1 li .colorRect1, .content2 li .colorRect4{
+    background-color: #011727;
+}
+.content1 li .colorRect2, .content2 li .colorRect3{
+    background-color: #efffe9;
+}
+.content1 li .colorRect3, .content2 li .colorRect2{
+    background-color: #2ec4b6;
+}
+.content1 li .colorRect4, .content2 li .colorRect1{
+    background-color: #b50f22;
+}
+/*Start Right Column*/
+#rightColumn{
+    position: absolute;
+    top:-150px;
+    left:750px;
+    background-color: #b50f22;
+    height:600px;
+    width:250px;
+}
+/*End Right Column*/
+/*********End rowContents*********/

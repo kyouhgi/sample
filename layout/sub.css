@@ -1,0 +1,119 @@
+#location{
+    height:45px;
+    border-bottom:1px solid #ccc;
+}
+#subArea .indiSub{
+    float: left;
+}
+/*** Start ContentsArea***/
+#contantsArea{
+    width: 710px;
+    margin-right: 40px;
+    background-color: #fafafa;
+}
+#contantsArea #contTitle{
+    height:150px;
+}
+#contantsArea #contImage{
+    height:120px;
+    background-color: #efffe9;
+}
+#contantsArea #contents{
+}
+#contantsArea #contBottom{
+    padding: 1000px 20px 20px 0;
+    text-align: center;
+    font-size: 1.3em;
+    font-style: italic;
+    color:#ccc;
+}
+/*** End Contents Area***/
+
+/*** Start rightSide Area(Local Navigation Bar***/
+
+#rightSide{
+    width:250px;
+}
+#rightSide #lnb{
+    background-color: #b50f22;
+    width:100%;
+}
+#rightSide #lnb h3{
+    color: #ccc;
+    height:150px;
+    text-align: center;
+    padding-top: 60px;
+    border-bottom: 1px solid #fff;
+}
+#rightSide #lnb li{
+    border-bottom: 1px solid #fff;
+}
+#rightSide #lnb li a{
+    position: relative;
+    display:inline-block;
+    padding:18px;
+    width:100%;
+    color:#ccc;
+    font-weight: 600;
+}
+#rightSide #lnb li a:hover{
+    background-color: #011727;
+}
+#rightSide #lnb li .checked{    /*클릭시 포커싱코드2-1*/
+    background-color: #011727;
+}
+#rightSide #lnb li .checked::before,  /*클릭시 포커싱하기2-2*/
+#rightSide #lnb li:hover a::before{
+    content: url(images/active_mark.png);
+    position: absolute;
+    left:-17px;
+    top:-2px;
+}
+#rightSide #lnb .sideCall{
+    height:185px;
+    line-height: 23px;
+    padding:20px 0 0 80px;
+    background:url(images/phone_black.png) no-repeat 30px 110px;
+    background-size:35px;
+}
+#rightSide #lnb .sideCall h4{
+    border-bottom:1px dashed #000;
+}
+#rightSide #lnb .sideCall p{
+    margin-top: 15px;
+}
+#rightSide .toTop{
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    padding: 0 5px;
+    width: 50px;
+    height: 50px;
+    background-color:#011727;
+    text-align: center;
+    font-weight: 800;
+    border-radius: 5px;
+}
+#rightSide .toTop #triangle{
+    position: relative;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border-right:20px solid transparent;
+    border-left:20px solid transparent;
+    border-bottom:25px solid #2ec4b6;
+}
+#rightSide .toTop #triangle div{
+    position: relative;
+    top: 26px;
+    left: -15px;
+    color: #2ec4b6;
+}
+#rightSide .collectedLink{
+    margin: 50px 0 70px 0;
+}
+#rightSide .collectedLink li{
+    height: 50px;
+    background-color: #efffe9;
+    margin-bottom: 10px;
+}

@@ -54,6 +54,9 @@ body{
     display:block;
     clear:both;
 }
+h2{font-size:1.5em; font-weight: 800;}
+h3{font-size:1.3em; font-weight: 800;}
+h4{font-size:1.1em; font-weight: 800;}
 
 /*********Start header*********/
 header.container #logo{
@@ -62,6 +65,11 @@ header.container #logo{
     width:290px;
     height:120px;
     background: #fff url(images/logo_concordia2.png) no-repeat center;
+}
+header.container #logo a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 header.container nav{
     text-align: right;
@@ -128,7 +136,6 @@ header.container nav #mainMenu>li.selected{
     position: relative;
     text-align:left;
     border-bottom: 2px solid #0a2b42;
-    font-size:1.3em;
     padding:20px;
 }
 #allViewBtn #allViewBox .rowBox{
@@ -230,6 +237,16 @@ header.container nav #mainMenu>li.selected{
     font-size:0.8em;
     cursor: pointer;
 }
+#foot .terms .pullDown h4::after{
+    content: "\25bc";
+    display: inline-block;
+    padding-left: 10px;
+}
+#foot .terms .pullDown:hover h4::after{
+    content: "\25b2";
+    display: inline-block;
+    padding-left: 10px;
+}
 #foot .terms .pullDown .familySite li a{
     display: block;
     padding:10px 28px;
@@ -243,11 +260,11 @@ header.container nav #mainMenu>li.selected{
     color:#ffffff;
 }
 #foot .terms .pullDown .familySite{
+    display: none;                            /*Mega-Menu familySite code1*/
     position: absolute;
-    display: none;
 }
 #foot .terms .pullDown:hover .familySite{
-    display: inline;
+    display: inline;                            /*Mega-Menu familySite code2*/
 }
 
 #foot .terms .address{
@@ -259,7 +276,7 @@ header.container nav #mainMenu>li.selected{
 
 
 #foot .callCenter{
-    background: url(images/phone.png) no-repeat 20px center;
+    background: url(images/phone_red.png) no-repeat 20px center;
     background-size: 30px;
 }
 #foot .callCenter h3{

@@ -1,4 +1,9 @@
+/*인클루드 헤더, 푸터 파일*/
+//$("#header").load("header.html");
+//$("#footer").load("footer.html")
+
 $(document).ready(function(){
+
 //초기화
 var current = 0;
 var _auto, autoNum = 0;

@@ -1,6 +1,6 @@
 #location{
     height:45px;
-    border-bottom:1px solid #ccc;
+    border-bottom:13px solid #eaeaea;
 }
 #subArea .indiSub{
     float: left;
@@ -13,12 +13,20 @@
 }
 #contantsArea #contTitle{
     height:150px;
+    padding:60px 0 0 5px;
+}
+#contantsArea #contTitle sub{
+    display: block;
+    margin-top: 40px;
+    font-size: 0.8em
 }
 #contantsArea #contImage{
     height:120px;
     background-color: #efffe9;
+    border-top: 1px solid #99cc99;
 }
 #contantsArea #contents{
+    padding: 30px;
 }
 #contantsArea #contBottom{
     padding: 1000px 20px 20px 0;
@@ -109,11 +117,11 @@
     left: -15px;
     color: #2ec4b6;
 }
-#rightSide .collectedLink{
+#rightSide #collectedLink{
     margin: 50px 0 70px 0;
 }
-#rightSide .collectedLink li{
-    height: 50px;
-    background-color: #efffe9;
+#rightSide #collectedLink li{
+    height: 20px;
+    background-color: #efefef;
     margin-bottom: 10px;
 }

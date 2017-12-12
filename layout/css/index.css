@@ -1,3 +1,7 @@
+.container{
+    border-left:1px solid #ffa3a3;
+    border-right:1px solid #ffa3a3;
+}
 /*********Start rollingBanner*********/
 #rollingBanner{
 }

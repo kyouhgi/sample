@@ -8,7 +8,7 @@
 /*** Start ContentsArea***/
 #contantsArea{
     width: 710px;
-    margin-right: 40px;
+    margin-right: 9px;
     background-color: #fafafa;
 }
 #contantsArea #contTitle{
@@ -72,7 +72,7 @@
 }
 #rightSide #lnb li .checked::before,  /*클릭시 포커싱하기2-2*/
 #rightSide #lnb li:hover a::before{
-    content: url(images/active_mark.png);
+    content: url(../images/active_mark.png);
     position: absolute;
     left:-17px;
     top:-2px;
